@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #28282e;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container h1 {
+  font-size: 4rem;
+  animation: header 4s;
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.header-container p {
+  font-size: 2rem;
+  color: #6a6a75;
+}
+
+.header-container button {
+  font-size: 1.4rem;
+  background-color: transparent;
+  background-color: #6a6a75;
+  border: 2px solid #6a6a75;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #28282e;
+  cursor: pointer;
+  text-decoration: none;
+  animation: button 7.3s;
+}
+
+.header-container button:hover {
+  color: #28282e;
+  background-color: #61616b;
+  border: 2px solid #61616b;
+}
+
+.header-container button:active {
+  color: #28282e;
+  background-color: #51515c;
+  border: 2px solid #51515c;
+}
+
+@keyframes button {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  65% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat {
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  width: 80vw;
+  padding-left: 10vw;
+  justify-content: space-around;
+  text-align: center;
+  color: #6a6a75;
+}
+
+.stat b {
+  font-size: 50px;
+}
+
+.stat p {
+  color: #4a4a57;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.text-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: auto;
+  display: flex;
+  width: 80vw;
+  padding-left: 10vw;
+  height: auto;
+  min-height: 50vh;
+  align-items: center;
+}
+
+.text-container p {
+  font-weight: bold;
+  font-size: 60px;
+  color: #6a6a75;
+  user-select: none;
+  line-height: 120%;
+  border-radius: 8px;
+}
+
+.text-completed {
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-color: #3a3a42;
+}
